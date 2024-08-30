@@ -1,0 +1,13 @@
+.hero__title {
+  font-family: $general-font;
+  font-weight: 700;
+  font-size: 58px;
+  line-height: 70px;
+  color: #42446e;
+}
+
+.hero__title-colored {
+  background: linear-gradient(to right, #13b0f5, #ca24b4);
+  background-clip: text;
+  color: transparent;
+}

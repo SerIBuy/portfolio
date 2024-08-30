@@ -1,0 +1,21 @@
+.projects__item-title {
+  font-family: $general-font;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 26px;
+}
+
+.projects__item-description {
+  font-family: $general-font;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.projects__link-preview,
+.projects__link-code {
+  font-family: $general-font;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000000;
+}
+
