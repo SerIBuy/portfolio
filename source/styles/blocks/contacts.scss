@@ -1,8 +1,37 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contacts__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 50px;
+}
+
+.contacts::after {
+  content: "";
+
+  width: 1209px;
+  height: 2px;
+  background-color: rgba(102, 102, 102, 0.3);
+}
+
 .contacts__phone,
 .contacts__mail {
   font-family: $menu-font;
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  color: #000000;
+  color: #42446e;
+}
+
+.contacts__right-side-wrapper {
+  display: flex;
+  column-gap: 75px;
+}
+
+.contacts__socials-svg {
+  fill: #42446e;
 }

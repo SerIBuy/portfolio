@@ -10,11 +10,8 @@
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo" href="#">
-      <div class="main-header__logo-container">
-        <span class="main-header__logo-string-top gradient-colored">{007}</span>
-        <span class="main-header__logo-string-bottom gradient-colored">pavanmg</span>
-      </div>
+    <a class="main-header__logo logo" href="#">
+      <img src="./images/icons/logo-gradient.svg" alt="Логотип" class="main-header__logo-image" width="97" height="59">
     </a>
     <nav class="main-nav nav">
       <ul class="main-nav__menu menu">
@@ -34,25 +31,46 @@
           <a class="menu__link" href="#">Contact</a>
         </li>
       </ul>
+      <ul class="main-header__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Github</span>
+            <svg width="30" height="30">
+              <use href="./icons/stack.svg#sprite-github"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="30" height="30">
+              <use href="./icons/stack.svg#sprite-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#">
+            <span class="visually-hidden">LinkedIn</span>
+            <svg width="30" height="30">
+              <use href="./icons/stack.svg#sprite-in"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
     </nav>
-    <ul class="main-header__socials socials">
-      <li class="socials__item">
-        <a class="socials__link" href="#">
-          <svg></svg>
-        </a>
-      </li>
-    </ul>
   </header>
   <main class="main-page">
-    <section class="hero">
-      <h1 class="hero__title">Hi 👋,
-        My name is
-        <span class="hero__title-colored">Pavan MG</span>
-        I build things for web
-      </h1>
-      <img class="hero__image" src="./images/hero-photo@1x.webp" srcset="./images/hero-photo@2x.webp 2x" alt="Фото автора" width="349" height="349">
+    <section class="hero container">
+      <div class="hero__container">
+        <h1 class="hero__title">Hi 👋, <br>
+          My name is <br>
+          <span class="hero__title-colored">Pavan MG</span><br>
+          I build things for web
+        </h1>
+        <img class="hero__image" src="./images/hero-photo@1x.webp" srcset="./images/hero-photo@2x.webp 2x" alt="Фото автора" width="349" height="349">
+      </div>
     </section>
-    <section class="tech-stack">
+    <section class="tech-stack container">
       <h2 class="h2-title">My Tech Stack</h2>
       <p class="section-description">Technologies I’ve been working with recently</p>
       <ul class="tech-stack__list">
@@ -94,15 +112,18 @@
         </li>
       </ul>
     </section>
-    <section class="projects">
+    <section class="projects container">
       <h2 class="h2-title">Projects</h2>
       <p class="section-description">Things I’ve built so far</p>
-      <ul class="projects__list projects">
+      <ul class="projects__list">
         <li class="projects__item">
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-1@1x.webp" srcset="./images/project-1@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -112,7 +133,10 @@
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-2@1x.webp" srcset="./images/project-2@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -122,7 +146,10 @@
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-3@1x.webp" srcset="./images/project-3@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -132,7 +159,10 @@
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-4@1x.webp" srcset="./images/project-4@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -142,7 +172,10 @@
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-5@1x.webp" srcset="./images/project-5@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -152,7 +185,10 @@
           <h3 class="projects__item-title">Project Tile goes here</h3>
           <img class="projects__item-image" src="./images/project-6@1x.webp" srcset="./images/project-6@2x.webp 2x" alt="Название проекта" width="375" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
-          <span class="projects__stack">Tech stack : HTML , JavaScript, SASS, React</span>
+          <div class="projects__stack-wrapper">
+            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-text">HTML , JavaScript, SASS, React</span>
+          </div>
           <div class="projects__links-wrapper">
             <a class="projects__link-preview" href="#">Live Preview</a>
             <a class="projects__link-code" href="#">View Code</a>
@@ -160,37 +196,47 @@
         </li>
       </ul>
     </section>
-    <section class="contacts">
-      <h2 class="visually-hidden">Контакты</h2>
-      <a class="main-header__logo" href="#">
-        <div class="main-header__logo-container">
-          <span class="main-header__logo-string-top">{007}</span>
-          <span class="main-header__logo-string-bottom">pavanmg</span>
+    <section class="contacts container">
+      <div class="contacts__container">
+        <h2 class="visually-hidden">Контакты</h2>
+        <a class="contacts__logo logo" href="#">
+          <img src="./images/icons/logo.svg" alt="Логотип" class="contacts__logo-image" width="97" height="59">
+        </a>
+        <div class="contacts__right-side-wrapper">
+          <a class="contacts__phone" href="tel:+911234509876">+91 12345 09876</a>
+          <a class="contacts__mail" href="mailto:info@example.com">info@example.com</a>
+          <ul class="contacts__socials socials">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Github</span>
+                <svg width="30" height="30">
+                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-github"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">Twitter</span>
+                <svg width="30" height="30">
+                  <use href="./icons/stack.svg#sprite-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <span class="visually-hidden">LinkedIn</span>
+                <svg width="30" height="30">
+                  <use href="./icons/stack.svg#sprite-in"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
-      </a>
-      <a class="contacts__phone" href="tel:+911234509876">+91 12345 09876</a>
-      <a class="contacts__mail" href="mailto:info@example.com">info@example.com</a>
-      <ul class="contacts__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <svg></svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <svg></svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <svg></svg>
-          </a>
-        </li>
-      </ul>
+      </div>
     </section>
   </main>
-  <footer class="main-footer">
-    <ul class="main-footer__menu menu">
+  <footer class="main-footer container">
+    <ul class="main-nav__menu menu">
       <li class="menu__item">
         <a class="menu__link" href="#">Home</a>
       </li>
@@ -207,7 +253,7 @@
         <a class="menu__link" href="#">Contact</a>
       </li>
     </ul>
-    <span class="footer__designedby">Designed and built by Pavan MG with Love & Coffee</span>
+    <span class="main-footer__designedby">Designed and built by Pavan MG with Love & Coffee</span>
   </footer>
 </body>
 

@@ -1,4 +1,7 @@
 .menu {
+  display: flex;
+  gap: 45px;
+
   @include list-style-reset();
 }
 
@@ -10,4 +13,6 @@
   line-height: 26px;
   color: #666666;
   text-decoration: none;
+
+  padding: 5px;
 }

@@ -1,21 +1,89 @@
+.projects__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 62px 42px;
+
+  @include list-style-reset();
+
+  margin: 170px 0;
+}
+
+.projects__item {
+  width: 373px;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects__item-image {
+  order: -2;
+}
+
 .projects__item-title {
   font-family: $general-font;
   font-weight: 500;
   font-size: 28px;
   line-height: 26px;
+  order: -1;
+
+  @include mp-reset();
+
+  padding-inline: 30px;
+  margin: 27px 0 17px;
 }
 
 .projects__item-description {
   font-family: $general-font;
   font-weight: 300;
   font-size: 14px;
+
+  @include mp-reset();
+
+  padding-inline: 30px;
+  margin: 17px 0 6px;
+}
+
+.projects__stack-title {
+  font-size: 16px;
+}
+
+.projects__stack-text {
+  font-size: 14px;
+}
+
+.projects__stack-wrapper {
+  margin: 6px 0 10px;
+  padding-left: 30px;
+}
+
+.projects__links-wrapper {
+  display: flex;
+  column-gap: 48px;
+  margin: 11px 0 25px;
+  padding-left: 30px;
 }
 
 .projects__link-preview,
 .projects__link-code {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
   font-family: $general-font;
   font-weight: 400;
   font-size: 16px;
   color: #000000;
+}
+
+.projects__link-preview::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/stack.svg#sprite-chain");
+}
+
+.projects__link-code::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-image: url("../../icons/stack.svg#sprite-github");
 }
 

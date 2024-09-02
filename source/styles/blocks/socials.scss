@@ -1,0 +1,6 @@
+.socials {
+  display: flex;
+  column-gap: 20px;
+
+  @include list-style-reset();
+}

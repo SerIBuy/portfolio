@@ -5,4 +5,8 @@
   line-height: 26px;
   text-align: center;
   color: #666666;
+
+  @include mp-reset();
+
+  margin: 50px 0;
 }

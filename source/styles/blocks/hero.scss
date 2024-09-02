@@ -1,9 +1,18 @@
+.hero__container {
+  display: flex;
+  column-gap: 200px;
+  align-items: center;
+  margin: 180px 0 300px;
+}
+
 .hero__title {
   font-family: $general-font;
   font-weight: 700;
   font-size: 58px;
   line-height: 70px;
   color: #42446e;
+
+  @include mp-reset();
 }
 
 .hero__title-colored {
