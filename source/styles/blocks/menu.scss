@@ -1,8 +1,20 @@
 .menu {
   display: flex;
-  gap: 45px;
+  flex-flow: column wrap;
+  gap: 15px 45px;
 
   @include list-style-reset();
+  margin-bottom: 15px;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+  }
+}
+
+.menu__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__link {
@@ -15,4 +27,8 @@
   text-decoration: none;
 
   padding: 5px;
+}
+
+.menu--colored a {
+  color: #42446e;
 }

@@ -11,7 +11,7 @@
 <body>
   <header class="main-header">
     <a class="main-header__logo logo" href="#">
-      <img src="./images/icons/logo-gradient.svg" alt="Логотип" class="main-header__logo-image" width="97" height="59">
+      <img class="main-header__logo-image" src="./images/icons/logo-gradient.svg" alt="Логотип" width="97" height="59">
     </a>
     <nav class="main-nav nav">
       <ul class="main-nav__menu menu">
@@ -36,7 +36,7 @@
           <a class="socials__link" href="#">
             <span class="visually-hidden">Github</span>
             <svg width="30" height="30">
-              <use href="./icons/stack.svg#sprite-github"></use>
+              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-github"></use>
             </svg>
           </a>
         </li>
@@ -44,7 +44,7 @@
           <a class="socials__link" href="#">
             <span class="visually-hidden">Twitter</span>
             <svg width="30" height="30">
-              <use href="./icons/stack.svg#sprite-twitter"></use>
+              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-twitter"></use>
             </svg>
           </a>
         </li>
@@ -52,15 +52,15 @@
           <a class="socials__link" href="#">
             <span class="visually-hidden">LinkedIn</span>
             <svg width="30" height="30">
-              <use href="./icons/stack.svg#sprite-in"></use>
+              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-in"></use>
             </svg>
           </a>
         </li>
       </ul>
     </nav>
   </header>
-  <main class="main-page">
-    <section class="hero container">
+  <main class="main-page container">
+    <section class="hero">
       <div class="hero__container">
         <h1 class="hero__title">Hi 👋, <br>
           My name is <br>
@@ -70,7 +70,7 @@
         <img class="hero__image" src="./images/hero-photo@1x.webp" srcset="./images/hero-photo@2x.webp 2x" alt="Фото автора" width="349" height="349">
       </div>
     </section>
-    <section class="tech-stack container">
+    <section class="tech-stack">
       <h2 class="h2-title">My Tech Stack</h2>
       <p class="section-description">Technologies I’ve been working with recently</p>
       <ul class="tech-stack__list">
@@ -112,7 +112,7 @@
         </li>
       </ul>
     </section>
-    <section class="projects container">
+    <section class="projects">
       <h2 class="h2-title">Projects</h2>
       <p class="section-description">Things I’ve built so far</p>
       <ul class="projects__list">
@@ -196,11 +196,11 @@
         </li>
       </ul>
     </section>
-    <section class="contacts container">
+    <section class="contacts">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контакты</h2>
         <a class="contacts__logo logo" href="#">
-          <img src="./images/icons/logo.svg" alt="Логотип" class="contacts__logo-image" width="97" height="59">
+          <img class="contacts__logo-image" src="./images/icons/logo.svg" alt="Логотип" width="97" height="59">
         </a>
         <div class="contacts__right-side-wrapper">
           <a class="contacts__phone" href="tel:+911234509876">+91 12345 09876</a>
@@ -218,7 +218,7 @@
               <a class="socials__link" href="#">
                 <span class="visually-hidden">Twitter</span>
                 <svg width="30" height="30">
-                  <use href="./icons/stack.svg#sprite-twitter"></use>
+                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -226,7 +226,7 @@
               <a class="socials__link" href="#">
                 <span class="visually-hidden">LinkedIn</span>
                 <svg width="30" height="30">
-                  <use href="./icons/stack.svg#sprite-in"></use>
+                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-in"></use>
                 </svg>
               </a>
             </li>
@@ -236,7 +236,7 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <ul class="main-nav__menu menu">
+    <ul class="main-nav__menu menu menu--colored">
       <li class="menu__item">
         <a class="menu__link" href="#">Home</a>
       </li>
@@ -253,7 +253,7 @@
         <a class="menu__link" href="#">Contact</a>
       </li>
     </ul>
-    <span class="main-footer__designedby">Designed and built by Pavan MG with Love & Coffee</span>
+    <span class="main-footer__designedby">Designed and built by <span class="main-footer__designedby-colored">Pavan MG</span> with <span class="main-footer__designedby-colored">Love</span> & <span class="main-footer__designedby-colored">Coffee</span></span>
   </footer>
 </body>
 

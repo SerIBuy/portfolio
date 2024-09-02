@@ -1,10 +1,27 @@
 .main-footer {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 60px 0;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .main-footer__designedby {
-  color: rgba(21, 20, 57, 0.4);
+  color: #666666;
   margin-right: 16px;
+  text-align: center;
+  margin-top: 30px;
+
+  @media (min-width: $viewport-tablet) {
+    margin-top: 0;
+  }
+}
+
+.main-footer__designedby-colored {
+  background: linear-gradient(to right, #13b0f5, #ca24b4);
+  background-clip: text;
+  color: transparent;
 }

@@ -1,9 +1,10 @@
 .tech-stack__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 100px 106px;
 
   @include list-style-reset();
 
-  margin: 150px 0;
+  margin: 147px 0;
 }

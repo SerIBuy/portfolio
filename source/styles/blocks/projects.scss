@@ -1,6 +1,7 @@
 .projects__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 62px 42px;
 
   @include list-style-reset();
@@ -12,6 +13,9 @@
   width: 373px;
   display: flex;
   flex-direction: column;
+  border-radius: 20px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
 }
 
 .projects__item-image {
@@ -53,6 +57,7 @@
 .projects__stack-wrapper {
   margin: 6px 0 10px;
   padding-left: 30px;
+  color: #42446e;
 }
 
 .projects__links-wrapper {

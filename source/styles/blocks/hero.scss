@@ -1,8 +1,13 @@
 .hero__container {
   display: flex;
-  column-gap: 200px;
+  flex-direction: column;
   align-items: center;
-  margin: 180px 0 300px;
+  margin: 180px 0 348px;
+
+  @media (min-width: $viewport-tablet) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .hero__title {
@@ -11,8 +16,13 @@
   font-size: 58px;
   line-height: 70px;
   color: #42446e;
+  text-align: center;
 
   @include mp-reset();
+
+  @media (min-width: $viewport-tablet) {
+    text-align: left;
+  }
 }
 
 .hero__title-colored {
