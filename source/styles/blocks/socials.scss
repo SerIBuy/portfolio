@@ -1,9 +1,17 @@
 .socials {
+  @include list-style-reset();
+
   display: flex;
   align-items: center;
   column-gap: 20px;
 
-  @include list-style-reset();
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  @media (min-width: 1300px) {
+    display: flex;
+  }
 }
 
 .socials__item,

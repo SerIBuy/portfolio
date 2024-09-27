@@ -3,30 +3,33 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 180px 0 300px;
+  margin-top: 60px 0;
   padding-block: 60px;
-  background-image: linear-gradient(to top, transparent 70%, #1e1e1e), linear-gradient(to bottom, transparent 70%, #1e1e1e), linear-gradient(to left, transparent 20%, #1e1e1e), linear-gradient(to right, transparent 70%, #1e1e1e), url("../../images/hero-code@1x.webp");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: cover;
+
+  @media (min-width: 900px) {
+    flex-direction: row;
+    margin: 180px 0 300px;
+  }
 
   @media (min-width: $viewport-tablet) {
-    flex-direction: row;
-    column-gap: 250px;
+    justify-content: space-between;
   }
 }
 
 .hero__title {
   font-family: $general-font;
   font-weight: 700;
-  font-size: 58px;
-  line-height: 70px;
   color: #ffffff;
   text-align: center;
+  font-size: 24px;
+  line-height: 34px;
 
   @include mp-reset();
+  margin-bottom: 40px;
 
   @media (min-width: $viewport-tablet) {
+    font-size: 58px;
+    line-height: 70px;
     text-align: left;
   }
 }

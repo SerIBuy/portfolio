@@ -61,6 +61,7 @@
         </ul>
       </nav>
     </div>
+    <div class="background-fixed"></div>
   </header>
   <main class="main-page container">
     <section class="hero" id="about-me">
@@ -69,7 +70,10 @@
           <span class="hero__title-colored">Сергей Буй</span><br>
           Я занимаюсь <br /><span class="hero__title-colored">Веб-разработкой</span>
         </h1>
-        <img class="hero__image" src="./images/hero-photo@1x.webp" srcset="./images/hero-photo@2x.webp 2x" alt="Фото автора" width="349" height="349">
+        <picture>
+          <source width="349" height="349" media="(min-width: 768px)" type="image/webp" srcset="images/hero-photo-desktop@1x.webp 1x, images/hero-photo-desktop@2x.webp 2x">
+          <img class="hero__image" src="./images/hero-photo-mobile@1x.webp" srcset="./images/hero-photo-mobile@2x.webp 2x" alt="Фото автора" width="150" height="150">
+        </picture>
       </div>
     </section>
     <section class="tech-stack" id="my-tech-stack">
@@ -205,43 +209,22 @@
       </ul>
     </section>
     <section class="contacts" id="my-contacts">
-      <div class="contacts__container">
-        <h2 class="visually-hidden">Контакты</h2>
-        <a class="main-header__logo logo" href="#">
-          <div class="logo__left-side">ECO</div>
-          <div class="logo__right-side">CODER</div>
-        </a>
-        <div class="contacts__right-side-wrapper">
-          <a class="contacts__phone" href="tel:+79531207314">+7-953-120-73-14</a>
-          <a class="contacts__mail" href="mailto:ecocoder@mail.ru">ecocoder@mail.ru</a>
-          <ul class="contacts__socials socials">
-            <li class="socials__item">
-              <a class="socials__link" href="https://github.com/SerIBuy">
-                <span class="visually-hidden">Гитхаб</span>
-                <svg width="30" height="30">
-                  <use class="socials__svg" href="./icons/stack.svg#sprite-github"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://vk.com/si_buy">
-                <span class="visually-hidden">Вконтакте</span>
-                <svg width="30" height="30">
-                  <use class="socials__svg" href="./icons/stack.svg#sprite-vk"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link" href="https://t.me/Si_Buy">
-                <span class="visually-hidden">Телеграмм</span>
-                <svg width="30" height="30">
-                  <use class="socials__svg" href="./icons/stack.svg#sprite-tg"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <h2 class="h2-title">Контакты</h2>
+      <p class="section-description">Как со мной связаться</p>
+      <ul class="contacts__list">
+        <li class="contacts__item contacts__item--adress">
+          <span class="contacts__title">Адрес</span>
+          <a class="contacts__item-link" href="#">г. Тамбов</a>
+        </li>
+        <li class="contacts__item contacts__item--phone">
+          <span class="contacts__title">Телефон</span>
+          <a class="contacts__item-link" href="tel:+79531207314">+7-953-120-73-14</a>
+        </li>
+        <li class="contacts__item contacts__item--mail">
+          <span class="contacts__title">Почта</span>
+          <a class="contacts__item-link" href="mailto:ecocoder@mail.ru">ecocoder@mail.ru</a>
+        </li>
+      </ul>
     </section>
   </main>
   <footer class="main-footer container">
@@ -257,6 +240,32 @@
       </li>
       <li class="menu__item">
         <a class="menu__link" href="#my-contacts">Контакты</a>
+      </li>
+    </ul>
+    <ul class="contacts__socials socials">
+      <li class="socials__item">
+        <a class="socials__link" href="https://github.com/SerIBuy">
+          <span class="visually-hidden">Гитхаб</span>
+          <svg width="30" height="30">
+            <use class="socials__svg" href="./icons/stack.svg#sprite-github"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://vk.com/si_buy">
+          <span class="visually-hidden">Вконтакте</span>
+          <svg width="30" height="30">
+            <use class="socials__svg" href="./icons/stack.svg#sprite-vk"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="socials__item">
+        <a class="socials__link" href="https://t.me/Si_Buy">
+          <span class="visually-hidden">Телеграмм</span>
+          <svg width="30" height="30">
+            <use class="socials__svg" href="./icons/stack.svg#sprite-tg"></use>
+          </svg>
+        </a>
       </li>
     </ul>
     <span class="main-footer__designedby">Designed and built by <span class="main-footer__designedby-colored">EcoCoder</span> with <span class="main-footer__designedby-colored">Love</span> & <span class="main-footer__designedby-colored">Coffee</span></span>

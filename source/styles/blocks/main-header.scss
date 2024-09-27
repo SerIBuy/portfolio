@@ -1,6 +1,12 @@
 .main-header {
+  position: relative;
   background-color: #000000;
   padding-block: 20px;
+  border-bottom: 1px solid $brand-color;
+
+  @media (min-width: $viewport-tablet) {
+    padding-inline: 50px;
+  }
 }
 
 .main-header__container {
@@ -8,12 +14,14 @@
   flex-direction: column;
   align-items: center;
   min-width: 320px;
+  z-index: 1;
+  row-gap: 30px;
 
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
     justify-content: space-between;
 
-    width: 1193px;
+    max-width: 1193px;
     margin: 0 auto;
   }
 }

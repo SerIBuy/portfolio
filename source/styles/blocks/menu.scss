@@ -25,6 +25,7 @@
   line-height: 26px;
   color: #ffffff;
   text-decoration: none;
+  text-transform: uppercase;
 
   padding: 5px;
 
@@ -48,5 +49,9 @@
   &:hover::after {
     transform: translateY(0);
     opacity: 1;
+  }
+
+  @media (min-width: $viewport-tablet) {
+    text-transform: none;
   }
 }

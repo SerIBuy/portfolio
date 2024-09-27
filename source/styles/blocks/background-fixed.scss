@@ -1,0 +1,12 @@
+.background-fixed {
+  position: fixed;
+  top: 250px;
+  width: 100%;
+  height: 500px;
+  background-image: linear-gradient(to top, transparent 70%, #1e1e1e), linear-gradient(to bottom, transparent 70%, #1e1e1e), linear-gradient(to left, transparent 20%, #1e1e1e), linear-gradient(to right, transparent 70%, #1e1e1e), url("../../images/hero-code@1x.webp");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
+  z-index: -1;
+  opacity: 0.3;
+}
