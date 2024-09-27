@@ -10,7 +10,7 @@
 }
 
 .main-footer__designedby {
-  color: #666666;
+  color: #ffffff;
   margin-right: 16px;
   text-align: center;
   margin-top: 30px;
@@ -21,7 +21,5 @@
 }
 
 .main-footer__designedby-colored {
-  background: linear-gradient(to right, #13b0f5, #ca24b4);
-  background-clip: text;
-  color: transparent;
+  color: $brand-color;
 }

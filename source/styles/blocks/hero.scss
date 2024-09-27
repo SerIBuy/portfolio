@@ -3,11 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 180px 0 348px;
+  margin: 180px 0 300px;
+  padding-block: 60px;
+  background-image: linear-gradient(to top, transparent 70%, #1e1e1e), linear-gradient(to bottom, transparent 70%, #1e1e1e), linear-gradient(to left, transparent 20%, #1e1e1e), linear-gradient(to right, transparent 70%, #1e1e1e), url("../../images/hero-code@1x.webp");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: cover;
 
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
-    justify-content: space-between;
+    column-gap: 250px;
   }
 }
 
@@ -16,7 +21,7 @@
   font-weight: 700;
   font-size: 58px;
   line-height: 70px;
-  color: #42446e;
+  color: #ffffff;
   text-align: center;
 
   @include mp-reset();
@@ -27,12 +32,11 @@
 }
 
 .hero__title-colored {
-  background: linear-gradient(to right, #13b0f5, #ca24b4);
-  background-clip: text;
-  color: transparent;
+  color: $brand-color;
 }
 
 .hero__image {
   border-radius: 50%;
-  border: 1px solid #13b0f5;
+  border: 2px solid $brand-color;
+  box-shadow: 1px 1px 8px 2px $brand-color;
 }

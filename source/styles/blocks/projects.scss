@@ -1,3 +1,7 @@
+.projects {
+  padding-top: 20px;
+}
+
 .projects__list {
   display: flex;
   flex-wrap: wrap;
@@ -14,11 +18,16 @@
   display: flex;
   flex-direction: column;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: #1e1e1e;
   box-shadow: 2px 2px 100px 0 rgba(0, 0, 0, 0.2);
+  border: 1px solid $brand-color;
+  padding: 10px;
 }
 
 .projects__item-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   order: -2;
 
   &:hover {
@@ -28,8 +37,7 @@
 
 .projects__item-image {
   display: block;
-  border-radius: 20px 20px 0 0;
-  border-bottom: 2px solid #88bc4c;
+  border-radius: 20px;
 }
 
 .projects__item-title {
@@ -38,36 +46,41 @@
   font-size: 28px;
   line-height: 26px;
   order: -1;
+  color: #ffffff;
 
   @include mp-reset();
 
-  padding-inline: 30px;
+  padding-inline: 20px;
   margin: 27px 0 17px;
 }
 
 .projects__item-description {
   font-family: $general-font;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 16px;
+  color: #ffffff;
 
   @include mp-reset();
 
-  padding-inline: 30px;
+  padding-inline: 20px;
   margin: 17px 0 6px;
 }
 
 .projects__stack-title {
   font-size: 16px;
+  color: #ffffff;
 }
 
 .projects__stack-text {
   font-size: 14px;
+  color: $brand-color;
+  font-weight: 700;
 }
 
 .projects__stack-wrapper {
   flex-grow: 1;
   margin: 6px 0 10px;
-  padding-left: 30px;
+  padding-left: 20px;
   color: #42446e;
 }
 
@@ -75,7 +88,7 @@
   display: flex;
   column-gap: 48px;
   margin: 11px 0 25px;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .projects__link-preview,
@@ -86,20 +99,27 @@
   font-family: $general-font;
   font-weight: 400;
   font-size: 16px;
-  color: #000000;
+  color: #ffffff;
 }
 
-.projects__link-preview::before {
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-image: url("../../icons/stack.svg#sprite-chain");
+.projects__link-preview:hover,
+.projects__link-code:hover {
+  color: $brand-color;
 }
 
+.projects__link-preview::before,
 .projects__link-code::before {
   content: "";
   width: 20px;
   height: 20px;
-  background-image: url("../../icons/stack.svg#sprite-github");
+  background-color: #ffffff;
+}
+
+.projects__link-preview::before {
+  mask-image: url("../../icons/stack.svg#sprite-chain");
+}
+
+.projects__link-code::before {
+  mask-image: url("../../icons/stack.svg#sprite-github");
 }
 

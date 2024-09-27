@@ -1,6 +1,22 @@
 .socials {
   display: flex;
+  align-items: center;
   column-gap: 20px;
 
   @include list-style-reset();
+}
+
+.socials__item,
+.socials__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials__svg {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #81ba41;
+  }
 }

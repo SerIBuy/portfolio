@@ -18,18 +18,21 @@
 
 .contacts::after {
   content: "";
-  max-width: 1209px;
+  width: 100%;
   height: 2px;
-  background-color: rgba(102, 102, 102, 0.3);
+  background-color: $brand-color;
 }
 
 .contacts__phone,
 .contacts__mail {
-  font-family: $menu-font;
   font-weight: 400;
   font-size: 18px;
   text-decoration: none;
-  color: #42446e;
+  color: #ffffff;
+
+  &:hover {
+    color: $brand-color;
+  }
 }
 
 .contacts__right-side-wrapper {
@@ -41,8 +44,4 @@
   @media (min-width: $viewport-tablet) {
     flex-direction: row;
   }
-}
-
-.contacts__socials-svg {
-  fill: #42446e;
 }

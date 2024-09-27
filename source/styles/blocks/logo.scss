@@ -1,0 +1,32 @@
+.logo {
+  display: flex;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.logo:hover .logo__left-side {
+  color: $brand-color;
+  background-color: #000000;
+  border: 1px solid $brand-color;
+  border-radius: 0 0 0 10px;
+}
+
+.logo:hover .logo__right-side {
+  color: #000000;
+  background-color: $brand-color;
+  border-radius: 0 10px 0 0;
+}
+
+.logo__left-side {
+  color: #000000;
+  background-color: $brand-color;
+  padding: 7px 15px;
+  border-radius: 10px 0 0;
+}
+
+.logo__right-side {
+  color: $brand-color;
+  padding: 7px 15px;
+  border: 1px solid $brand-color;
+  border-radius: 0 0 10px;
+}

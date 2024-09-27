@@ -1,5 +1,5 @@
 .tech-stack {
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .tech-stack__list {
@@ -11,5 +11,15 @@
   @include list-style-reset();
 
   margin: 147px 0;
+}
+
+.tech-stack__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  border: 1px solid $brand-color;
+  border-radius: 10px;
 }
 

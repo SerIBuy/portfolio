@@ -1,7 +1,4 @@
 
-$menu-font: "DM Sans", "Arial", sans-serif;
-$general-font: "Poppins", "Arial", sans-serif;
-
 @include font-face("DM Sans", 400, normal, url("../../fonts/dmsans-regular/DMSans-Regular.woff2") format("woff2"));
 @include font-face("DM Sans", 500, normal, url("../../fonts/dmsans-medium/DMSans-Medium.woff2") format("woff2"));
 @include font-face("Poppins", 300, normal, url("../../fonts/poppins-light/Poppins-Light.woff2") format("woff2"));

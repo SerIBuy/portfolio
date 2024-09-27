@@ -4,65 +4,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles/styles.css">
   <title>Eco Coder</title>
 </head>
 
 <body>
   <header class="main-header">
-    <a class="main-header__logo logo" href="#">
-      <img class="main-header__logo-image" src="./images/icons/logo-gradient.svg" alt="Логотип" width="97" height="59">
-    </a>
-    <nav class="main-nav nav">
-      <ul class="main-nav__menu menu">
-        <li class="menu__item">
-          <a class="menu__link" href="#about-me">Обо мне</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#my-tech-stack">Навыки</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#my-projects">Проекты</a>
-        </li>
-        <li class="menu__item">
-          <a class="menu__link" href="#my-contacts">Контакты</a>
-        </li>
-      </ul>
-      <ul class="main-header__socials socials">
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Github</span>
-            <svg width="30" height="30">
-              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-github"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">Twitter</span>
-            <svg width="30" height="30">
-              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-twitter"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="socials__item">
-          <a class="socials__link" href="#">
-            <span class="visually-hidden">LinkedIn</span>
-            <svg width="30" height="30">
-              <use class="main-header__socials-svg" href="./icons/stack.svg#sprite-in"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <div class="main-header__container">
+      <a class="main-header__logo logo" href="#">
+        <div class="logo__left-side">ECO</div>
+        <div class="logo__right-side">CODER</div>
+      </a>
+      <nav class="main-nav nav">
+        <ul class="main-nav__menu menu">
+          <li class="menu__item">
+            <a class="menu__link" href="#about-me">Обо мне</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#my-tech-stack">Навыки</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#my-projects">Проекты</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#my-contacts">Контакты</a>
+          </li>
+        </ul>
+        <ul class="main-header__socials socials">
+          <li class="socials__item">
+            <a class="socials__link" href="https://github.com/SerIBuy">
+              <span class="visually-hidden">Гитхаб</span>
+              <svg width="30" height="30">
+                <use class="socials__svg" href="./icons/stack.svg#sprite-github"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://vk.com/si_buy">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg width="30" height="30">
+                <use class="socials__svg" href="./icons/stack.svg#sprite-vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a class="socials__link" href="https://t.me/Si_Buy">
+              <span class="visually-hidden">Телеграмм</span>
+              <svg width="30" height="30">
+                <use class="socials__svg" href="./icons/stack.svg#sprite-tg"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
   <main class="main-page container">
     <section class="hero" id="about-me">
       <div class="hero__container">
-        <h1 class="hero__title">Привет 👋, <br>
-          Меня зовут <br>
+        <h1 class="hero__title">Привет 👋, меня зовут <br>
           <span class="hero__title-colored">Сергей Буй</span><br>
-          Я занимаюсь веб-разработкой
+          Я занимаюсь <br /><span class="hero__title-colored">Веб-разработкой</span>
         </h1>
         <img class="hero__image" src="./images/hero-photo@1x.webp" srcset="./images/hero-photo@2x.webp 2x" alt="Фото автора" width="349" height="349">
       </div>
@@ -111,11 +116,11 @@
     </section>
     <section class="projects" id="my-projects">
       <h2 class="h2-title">Проекты</h2>
-      <p class="section-description">Мои главные работы</p>
+      <p class="section-description">Мои основные работы</p>
       <ul class="projects__list">
         <li class="projects__item">
-          <h3 class="projects__item-title">Проект "Седона"</h3>
-          <a class="projects__item-link" href="https://seribuy.github.io/2209935-sedona-39/"><img class="projects__item-image" src="./images/project-sedona@1x.webp" srcset="./images/project-sedona@2x.webp 2x" alt="Название проекта" width="373" height="260"></a>
+          <h3 class="projects__item-title">"Седона"</h3>
+          <a class="projects__item-link" href="https://seribuy.github.io/2209935-sedona-39/"><img class="projects__item-image" src="./images/project-sedona@1x.webp" srcset="./images/project-sedona@2x.webp 2x" alt="Название проекта" width="365" height="260"></a>
           <p class="projects__item-description">Этот проект я делал в рамках курса по верстке в HTML Academy</p>
           <div class="projects__stack-wrapper">
             <span class="projects__stack-title">Инструменты:</span>
@@ -127,13 +132,13 @@
           </div>
         </li>
         <li class="projects__item">
-          <h3 class="projects__item-title">Проект "Вместе под парусом"</h3>
+          <h3 class="projects__item-title">"Вместе под парусом"</h3>
           <a class="projects__item-link" href="https://seribuy.github.io/yacht-club/">
-            <img class="projects__item-image" src="./images/project-yacht-club@1x.webp" srcset="./images/project-yacht-club@2x.webp@2x.webp 2x" alt="Название проекта" width="373" height="260">
+            <img class="projects__item-image" src="./images/project-yacht-club@1x.webp" srcset="./images/project-yacht-club@2x.webp@2x.webp 2x" alt="Название проекта" width="365" height="260">
           </a>
           <p class="projects__item-description">Этот проект делал на фрилансе</p>
           <div class="projects__stack-wrapper">
-            <span class="projects__stack-title">Tech stack:</span>
+            <span class="projects__stack-title">Инструменты:</span>
             <span class="projects__stack-text">HTML , CSS</span>
           </div>
           <div class="projects__links-wrapper">
@@ -142,9 +147,9 @@
           </div>
         </li>
         <li class="projects__item">
-          <h3 class="projects__item-title">Проект "Cat Energy"</h3>
+          <h3 class="projects__item-title">"Cat Energy"</h3>
           <a class="projects__item-link" href="https://seribuy.github.io/seribuy-cat-energy/">
-            <img class="projects__item-image" src="./images/project-cat-energy@1x.webp" srcset="./images/project-cat-energy@2x.webp@2x.webp 2x" alt="Название проекта" width="373" height="260">
+            <img class="projects__item-image" src="./images/project-cat-energy@1x.webp" srcset="./images/project-cat-energy@2x.webp@2x.webp 2x" alt="Название проекта" width="365" height="260">
           </a>
           <p class="projects__item-description">Проект реализован в рамках курса в HTML Axademy по адптивной верстке. Сайт адаптирован под мобильное устройство, планшет и десктоп.</p>
           <div class="projects__stack-wrapper">
@@ -157,9 +162,9 @@
           </div>
         </li>
         <li class="projects__item">
-          <h3 class="projects__item-title">Проект "Кекстаграмм"</h3>
+          <h3 class="projects__item-title">"Кекстаграмм"</h3>
           <a class="projects__item-link" href="https://seribuy.github.io/kekstagram/">
-            <img class="projects__item-image" src="./images/project-kekstagram@1x.webp" srcset="./images/project-kekstagram@2x.webp@2x.webp 2x" alt="Название проекта" width="373" height="260">
+            <img class="projects__item-image" src="./images/project-kekstagram@1x.webp" srcset="./images/project-kekstagram@2x.webp@2x.webp 2x" alt="Название проекта" width="365" height="260">
           </a>
           <p class="projects__item-description">Проект реализован в рамках курса в HTML Academy по JavaScript</p>
           <div class="projects__stack-wrapper">
@@ -173,7 +178,7 @@
         </li>
         <!-- <li class="projects__item">
           <h3 class="projects__item-title">Project Tile goes here</h3>
-          <img class="projects__item-image" src="./images/project-5@1x.webp" srcset="./images/project-5@2x.webp 2x" alt="Название проекта" width="375" height="260">
+          <img class="projects__item-image" src="./images/project-5@1x.webp" srcset="./images/project-5@2x.webp 2x" alt="Название проекта" width="365" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
           <div class="projects__stack-wrapper">
             <span class="projects__stack-title">Tech stack:</span>
@@ -186,7 +191,7 @@
         </li>
         <li class="projects__item">
           <h3 class="projects__item-title">Project Tile goes here</h3>
-          <img class="projects__item-image" src="./images/project-6@1x.webp" srcset="./images/project-6@2x.webp 2x" alt="Название проекта" width="375" height="260">
+          <img class="projects__item-image" src="./images/project-6@1x.webp" srcset="./images/project-6@2x.webp 2x" alt="Название проекта" width="365" height="260">
           <p class="projects__item-description">This is sample project description random things are here in description This is sample project lorem ipsum generator for dummy content</p>
           <div class="projects__stack-wrapper">
             <span class="projects__stack-title">Tech stack:</span>
@@ -202,34 +207,35 @@
     <section class="contacts" id="my-contacts">
       <div class="contacts__container">
         <h2 class="visually-hidden">Контакты</h2>
-        <a class="contacts__logo logo" href="#">
-          <img class="contacts__logo-image" src="./images/icons/logo.svg" alt="Логотип" width="97" height="59">
+        <a class="main-header__logo logo" href="#">
+          <div class="logo__left-side">ECO</div>
+          <div class="logo__right-side">CODER</div>
         </a>
         <div class="contacts__right-side-wrapper">
           <a class="contacts__phone" href="tel:+79531207314">+7-953-120-73-14</a>
           <a class="contacts__mail" href="mailto:ecocoder@mail.ru">ecocoder@mail.ru</a>
           <ul class="contacts__socials socials">
             <li class="socials__item">
-              <a class="socials__link" href="#">
-                <span class="visually-hidden">Github</span>
+              <a class="socials__link" href="https://github.com/SerIBuy">
+                <span class="visually-hidden">Гитхаб</span>
                 <svg width="30" height="30">
-                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-github"></use>
+                  <use class="socials__svg" href="./icons/stack.svg#sprite-github"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
-                <span class="visually-hidden">Twitter</span>
+              <a class="socials__link" href="https://vk.com/si_buy">
+                <span class="visually-hidden">Вконтакте</span>
                 <svg width="30" height="30">
-                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-twitter"></use>
+                  <use class="socials__svg" href="./icons/stack.svg#sprite-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="socials__item">
-              <a class="socials__link" href="#">
-                <span class="visually-hidden">LinkedIn</span>
+              <a class="socials__link" href="https://t.me/Si_Buy">
+                <span class="visually-hidden">Телеграмм</span>
                 <svg width="30" height="30">
-                  <use class="contacts__socials-svg" href="./icons/stack.svg#sprite-in"></use>
+                  <use class="socials__svg" href="./icons/stack.svg#sprite-tg"></use>
                 </svg>
               </a>
             </li>
@@ -239,7 +245,7 @@
     </section>
   </main>
   <footer class="main-footer container">
-    <ul class="main-nav__menu menu menu--colored">
+    <ul class="main-nav__menu menu">
       <li class="menu__item">
         <a class="menu__link" href="#about-me">Обо мне</a>
       </li>
